@@ -26,4 +26,4 @@ jobs:
       - name: Delete old container
         run: docker rm -f reactnotescrud-backend
       - name: Run Docker Container
-        run: docker run -d -p 3500:3500 --name reactnotescrud-backend -e MONGO_PASSWORD='${{ secrets.MONGODB_PASSWORD }}' sergio7174/reactnotescrud-backend
+        run: docker run -d -p 3080:3080 --name reactnotescrud-backend -e MONGO_PASSWORD='${{ secrets.MONGODB_PASSWORD }}' sergio7174/reactnotescrud-backend
